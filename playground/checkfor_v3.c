@@ -4,11 +4,12 @@
 #include <stdbool.h>
 
 int checkfor(char *str);
+char *alloc_mem(int arg, char **arr);
 
 /**
  * alloc_mem - allocates appropriate memory to store a series of strings
  * @arg: number of strings passed.
- * @arr: an array of the arrays.
+ * @arr: an array of the strings.
  *
  * Return: NULL if fail, pointer to an array of pointers.
  */
@@ -19,9 +20,7 @@ char *alloc_mem(int arg, char **arr)
 
 	/*Calculates the size of each string in arr and adds to total array size*/
 	for (a1 = 1; a1 < (unsigned long int)arg; a1++)
-	{
 		arr_size += sizeof(arr[a1]);
-	}
 
 	str = malloc(arr_size);
 	if (str == NULL)
