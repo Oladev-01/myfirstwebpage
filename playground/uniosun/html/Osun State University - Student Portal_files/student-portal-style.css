@@ -1,0 +1,308 @@
+.reg-button-cont-add
+{
+	float:left;
+	clear:none;
+	vertical-align:middle;
+	padding:0 35px 0 24px;
+	background:url(images/down24.png) no-repeat center left ;
+}
+
+.reg-button-cont-remove
+{
+	float:left;
+	clear:none;
+	vertical-align:middle;
+	padding:0 35px 0 24px;
+	background:url(images/up24.png) no-repeat center left ;
+}
+
+.reg-button-cont-finale
+{
+	float:left;
+	clear:none;
+	vertical-align:middle;
+	padding:0 35px 0 24px;
+	background:url(images/add24.png) no-repeat center left ;
+}
+
+.reg-button
+{
+	height:45px;
+	padding:10px;
+
+}
+
+.course-container{
+	clear:left;
+	float:left;
+	padding:2px;
+	margin:1px;
+}
+
+.course-container .title{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	display:block;
+	background:#D8EDB4;
+	padding:10px;
+	border-left: 3px solid #4F902C;
+}
+
+.course-container .summary{
+	display:block;
+	background:#D8EDB4;
+	padding:3px;
+	margin-top:-1px;
+	border: 2px solid #4F902C;
+	border-top:0px;
+}
+
+#search-box{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	display:block;
+	clear:both;
+	background:#D8EDB4;
+	padding:10px;
+	border-left: 3px solid #4F902C;
+	margin: 2px 0 5px 0;
+}
+
+#search-msg{
+	color:#F00;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	padding:5px;
+}
+
+#search-msg img{
+	padding:3px;
+	vertical-align:middle;
+}
+
+.course-container .selection-box{
+	width:600px;
+	padding:2px;
+	position:static;
+	font: 14px "Courier New", Courier, monospace;
+	border: 2px solid #4F902C;
+	border-bottom:0px;
+}
+
+#navi-bar{
+	float:LEFT;
+	clear:both;
+	padding:5px;
+}
+
+#navi-bar #loading{
+	text-align:center;
+	background:url(images/loading.gif) no-repeat top center;
+	visibility:hidden;
+	padding:14px 0 0 0;
+}
+
+
+.emphasis{
+	font: 16px bold  Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}
+
+#outstanding-sem{
+
+}
+
+#late-reg-box{
+	display:none;
+	border:1px solid #0C6;
+	width:50%;
+	padding: 5px 5px 5px 5px;
+}
+
+#courses {
+	float:left;
+	width:100%;
+	border:solid 1px #060;
+	background:#D6EABB;
+	margin:0px 0px 2px 2px;
+}
+
+#courses .heading {	
+	position:relative;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #060;
+	color:#C00;
+	padding: 10px 10px 10px 25px;
+	font: 16px bold  Arial, Helvetica, sans-serif;
+}
+
+#courses .courses-body {
+	
+}
+
+#courses .course-item {
+	clear:both;
+	width:95%;
+	margin: 0px 3px 1px 3px;
+	padding: 2px;
+	float:left;
+	font:12px "Courier New", Courier, monospace;
+	border-bottom:#060 dotted 1px;
+}
+
+#courses .course-item:hover {
+	background-color:#A3CE68;
+
+}
+
+#courses .odd-row{
+	background:#BFDD97;
+}
+
+#courses .course-item:hover {	
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+#courses .course-sn {
+	float:left;
+	padding:4px;
+}
+
+#courses .course-code {
+	float:left;
+	padding:4px;
+	font-weight:bold;
+}
+
+#courses .course-title {
+	width:350px;
+	float:left;
+	padding:4px;
+	font-style:italic;
+}
+
+#courses .course-unit {
+	float:left;
+	padding:4px;	
+}
+
+#courses .course-summary {
+	float:left;
+	clear:both;
+	width:95%;
+	padding: 10px 4px 10px 4px;	
+	margin: 0px 3px 1px 3px;
+	font:16px bold "Courier New", Courier, monospace;
+	border-bottom:#060 dotted 1px;	
+}
+
+.course-search {
+	float:left;
+	clear:both;
+	width:95%;
+	padding: 10px 4px 10px 4px;	
+	margin: 0px 3px 1px 3px;
+	border-bottom:#060 dotted 1px;	
+}
+
+.action-bar{
+	width:95%;
+	clear:both;
+	padding:4px;
+}
+
+#othercourses{
+	clear:both;
+}
+
+
+/* dashboard */
+#dashboard {
+	float: right;
+	/*width: 278px;*/
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+	background: #FFF url(images/sidebar-bg.jpg) repeat-y;
+	font: bold 12px Tahoma, Arial, Tahoma, Sans-serif;
+}
+
+#dashboard img {
+	float:left;
+	padding: 1px;
+	margin: 10px 5px 0px 20px;
+	border:#060 solid 1px;
+}
+
+#dashboard img.linked {
+	float:left;
+	padding: 1px;
+	margin: 0px 1px 0px 20px;
+	border:#060 solid 1px;
+}
+
+#dashboard ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#dashboard li {
+	margin: 0;
+	padding: 0;
+}
+
+#dashboard li ul {
+	padding-bottom: 30px;
+}
+
+#dashboard li li {
+	line-height: 35px;
+	background: url(images/hdot2.gif) repeat-x bottom /*#FFFFFF*/;
+	padding-left: 15px;
+}
+
+#dashboard li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#dashboard h2 {
+	height: 25px;
+	padding: 15px 0px 0px 5px;
+	letter-spacing: -.5px;
+	color: #060;
+	font-family: Tahoma, "Trebuchet MS", Arial;/*
+	Reference
+	font: font-style || font-variant || font-weight || font-size[/line-height] || font-family | CSS2FontConstant
+	*/
+}
+
+#dashboard span.header {
+	padding: 10px 0px 0px 10px;
+	margin: 10px;
+	color: #030;
+	font: bold 18px "Trebuchet MS", Arial, Tahoma, Sans-serif;
+	font-stretch:expanded;
+}
+
+#dashboard span.news-title {
+	color: #DFA800;
+	font: bold 12px Arial, Tahoma, Sans-serif;
+}
+
+#dashboard p {
+	margin: 0 0px;
+	padding:10px 5px 20px 20px;
+	text-align: Left;
+	font: normal 12px Tahoma, "Trebuchet MS", Arial, Tahoma, Sans-serif;
+	line-height:150%;
+}
+
+#dashboard-top {
+	background:url(images/sidebar-top.jpg) no-repeat top;
+}
+
+#dashboard-bot {
+	background:url(images/sidebar-bot.jpg) no-repeat bottom;
+}

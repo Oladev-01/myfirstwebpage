@@ -1,0 +1,108 @@
+// JavaScript Document
+function showCourses0(str,sem)
+{
+if (str.length<5)
+{ 
+  document.getElementById("othercourses").innerHTML="";
+  //document.getElementById("othercourses").style.border="0px";
+  return;
+}
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+  document.getElementById("othercourses").innerHTML=" <img src='images/loading.gif' width='16' height='16' /> Loading, please wait... ";
+  xmlhttp=new XMLHttpRequest();
+}
+else
+{// code for IE6, IE5
+  document.getElementById("othercourses").innerHTML=" <img src='images/loading.gif' width='16' height='16' /> Loading, please wait... ";
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+xmlhttp.onreadystatechange=function()
+{
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  {
+    document.getElementById("othercourses").innerHTML=xmlhttp.responseText;
+  }
+}
+xmlhttp.open("GET","getcourses.php?q="+str+"&s="+sem,true);
+xmlhttp.send();
+}
+
+
+// 13 nov 2012, - delete function after upload of new registration_page.php
+function refresh_registration_contents(semester,matric_number)
+{	
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  document.getElementById("registration-contents").innerHTML=" <br /> <img src='images/loading.gif' width='24' height='24' /> Loading, please wait... ";
+	  xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+	  document.getElementById("registration-contents").innerHTML=" <br /> <img src='images/loading.gif' width='24' height='24' /> Loading, please wait... ";
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.onreadystatechange=function()
+	{
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	  {
+		document.getElementById("registration-contents").innerHTML=xmlhttp.responseText;
+	  }
+	}
+	
+	xmlhttp.open("GET","pages/registration_page.php?semester_ajax="+semester+"&matric_number="+matric_number,true);
+	xmlhttp.send();
+}
+
+
+function refresh_payment_contents(ssession,matric_number)
+{	
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  document.getElementById("payments-contents").innerHTML=" <br /> <img src='images/loading.gif' width='16' height='16' /> Loading, please wait... ";
+	  xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+	  document.getElementById("payments-contents").innerHTML=" <br /> <img src='images/loading.gif' width='16' height='16' /> Loading, please wait... ";
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.onreadystatechange=function()
+	{
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	  {
+		document.getElementById("payments-contents").innerHTML=xmlhttp.responseText;
+	  }
+	}
+	
+	xmlhttp.open("GET","pages/accounts_page.php?session_ajax="+ssession+"&matric_number="+matric_number,true);
+	xmlhttp.send();
+}
+
+
+function load_payment_history(pay_method_type,matric_number)
+{	
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  document.getElementById("pay-history-contents").innerHTML=" <br /> <img src='images/loading.gif' width='16' height='16' /> Loading, please wait... ";
+	  xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+	  document.getElementById("pay-history-contents").innerHTML=" <br /> <img src='images/loading.gif' width='16' height='16' /> Loading, please wait... ";
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	
+	xmlhttp.onreadystatechange=function()
+	{
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	  {
+		document.getElementById("pay-history-contents").innerHTML=xmlhttp.responseText;
+	  }
+	}
+	
+	xmlhttp.open("GET","pages/pay_history_page.php?pay_type="+pay_method_type+"&matric_number="+matric_number,true);
+	xmlhttp.send();
+}

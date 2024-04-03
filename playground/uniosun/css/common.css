@@ -1,0 +1,21 @@
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    color: black;
+    background-color: aqua;
+    padding: 1028px;
+    padding-left: 1028px;
+}
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    max-width: 1000%;
+}
